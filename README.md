@@ -4,3 +4,7 @@ This project is centered tightly around the above-mentioned legacy PoC network r
 
 
 <img width="504" height="1135" alt="IMG_2056" src="https://github.com/user-attachments/assets/22981abc-763d-44b0-b890-3092dc9a8c93" />
+
+Getting around inside the radio itself is a little easier if you follow these instructions: 
+
+https://alexhorner.cc/android/zx-network-radio-customisation/
