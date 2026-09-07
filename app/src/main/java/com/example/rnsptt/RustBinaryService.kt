@@ -19,9 +19,9 @@ class RustBinaryService : Service() {
         return null
     }
     private fun prepareBinary() {
-        val destFile = File(filesDir, "tcp_server")
+        val destFile = File(filesDir, "tcpsvrbin")
         if (!destFile.exists()) {
-            assets.open("tcp_server").use { input ->
+            assets.open("tcpsvrbin").use { input ->
                 FileOutputStream(destFile).use { output ->
                     input.copyTo(output)
                 }
@@ -37,7 +37,7 @@ class RustBinaryService : Service() {
     private fun runBinary() {
         Thread {
             try {
-                rustProcess = ProcessBuilder(File(filesDir, "tcp_server").absolutePath)
+                rustProcess = ProcessBuilder(File(filesDir, "tcpsvrbin").absolutePath)
                     .directory(filesDir)
                     .start()
                 rustProcess?.inputStream?.bufferedReader()?.forEachLine { line ->
