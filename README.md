@@ -2,6 +2,8 @@ This is an Android Studio project being built for an Android 5.1.1 PoC radio (AP
 
 This project is centered tightly around the above-mentioned legacy PoC network radios, because there is already plenty of Reticulum functionality out there for modern platforms. It's hopefully a step in the right direction from the RNS-projects repo. Same binary, just now it's running in a Kotlin wrapper instead of in the Termux shell.
 
+I have successfully used this tcp server app on the below device to rnsh between two computers running the python rnsd, via wifi, with both computers configured to communicate only through the tcp server app. It did fall off after a few minutes, bit I did run top. 
+
 
 <img width="504" height="1135" alt="IMG_2056" src="https://github.com/user-attachments/assets/22981abc-763d-44b0-b890-3092dc9a8c93" />
 
